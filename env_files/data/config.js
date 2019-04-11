@@ -19,19 +19,6 @@ const config = {
     dest: './dest/assets/javascripts/',
     bunleFileName: 'bundle',
   },
-  images: {
-    src: ['./src/assets/images/**/*.{png,jpg,svg,gif}', '!./src/assets/images/**/__*.{png,jpg,svg,gif}'],
-    srcNoBuild: './src/assets/images/**/__*.{png,jpg,svg,gif}',
-    dest: './dest/assets/images',
-  },
-  webpImages: {
-    src: ['./src/assets/images/**/*.{png,jpg}', '!./src/assets/images/**/__*.{png,jpg}'],
-    dest: './dest/assets/images',
-  },
-  fonts: {
-    src: './src/assets/fonts/**/*',
-    dest: './dest/assets/fonts',
-  },
 };
 
 module.exports = {
