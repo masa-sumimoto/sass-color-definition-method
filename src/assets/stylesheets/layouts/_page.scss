@@ -3,7 +3,7 @@
 // ========================================
 
 // ---------------------------------
-// Global
+// Reset
 // ---------------------------------
 *:focus { outline: none; }
 
@@ -60,4 +60,21 @@ table {
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+
+// ---------------------------------
+// Page Elements
+// ---------------------------------
+.wrapper { padding: 40px; }
+
+.colors {
+  &__item {
+    $_size: 48px;
+
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: $_size;
+    height: $_size;
+  }
 }
