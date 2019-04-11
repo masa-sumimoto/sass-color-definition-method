@@ -1,1 +1,37 @@
-// sample.scss
+// [note] test of brightness
+
+
+// Static
+// ------------------------------
+$color-test: #000;
+$color-test-900: #121212;
+$color-test-800: #323232;
+$color-test-700: #4b4b4b;
+$color-test-600: #656565;
+$color-test-500: #7e7e7e;
+$color-test-400: #989898;
+$color-test-300: #b1b1b1;
+$color-test-200: #cbcbcb;
+$color-test-100: #e4e4e4;
+
+.bg-test { background-color: $color-test; }
+.bg-test-900 { background-color: $color-test-900; }
+.bg-test-800 { background-color: $color-test-800; }
+.bg-test-700 { background-color: $color-test-700; }
+.bg-test-600 { background-color: $color-test-600; }
+.bg-test-500 { background-color: $color-test-500; }
+.bg-test-400 { background-color: $color-test-400; }
+.bg-test-300 { background-color: $color-test-300; }
+.bg-test-200 { background-color: $color-test-200; }
+.bg-test-100 { background-color: $color-test-100; }
+
+.color-boxes {
+  &__item {
+    $_size: 48px;
+
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: $_size;
+    height: $_size;
+  }
+}
