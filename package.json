@@ -1,7 +1,7 @@
 {
-  "name": "my-gulp-web-starter",
+  "name": "sass-color-generate-regulation",
   "version": "1.0.0",
-  "description": "This is my html starter kid with Gulp",
+  "description": "This is my color generate regulation with SASS",
   "main": "app.js",
   "scripts": {
     "serve": "gulp",
