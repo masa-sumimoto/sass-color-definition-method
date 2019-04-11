@@ -1,7 +1,7 @@
 # SASS Color Definition Method
 This is my color definition method using SASS.
 
-![Capture1](https://github.com/masa-sumioto/sass-color-definition-method/blob/master/env_files/images/capture-1.png)
+![Capture1](https://github.com/masa-sumimoto/sass-color-definition-method/blob/master/env_files/images/capture-1.png)
 
 ## About the method
 I use the brightness. I can get brighter colors than the base color in this way, along with the base color.
