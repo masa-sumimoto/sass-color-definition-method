@@ -46,7 +46,7 @@ $color-red: (hex: #f00, r: 255, g: 0, b: 0);
 ```
 
 ### Step5
-Use the map-merge function to add the required colors to $ colors. I often use Bootstrap, so naming convention of keys will be like Bootstrap.  
+Use the map-merge function to add the required colors to `$colors`. I often use Bootstrap, so naming convention of keys will be like Bootstrap.  
 (xxx-900, xxx-800...)
 ```
 $colors: map-merge(
@@ -67,7 +67,7 @@ $colors: map-merge(
 ```
 
 ### Step6
-Let's create utility classes. In the following sample, I am creating classes for background and for color using $colors map.
+Let's create utility classes. In the following sample, I am creating classes for background and for color using `$colors`.
 ```
 @each $color, $value in $colors {
   .bg-#{$color} {
@@ -83,7 +83,7 @@ Let's create utility classes. In the following sample, I am creating classes for
 ```
 
 ### Step7
-Let's create also any classes. In the following sample, I referred to a specific color directly from $ color.
+Let's create also any classes. In the following sample, I referred to a specific color directly using `colors()`.
 ```
 .top-foo-parts {
   color: colors("red-900");
