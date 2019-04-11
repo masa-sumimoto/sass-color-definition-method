@@ -28,10 +28,10 @@ html {
 }
 
 body {
-  background: $body-bg;
-  color: $body-color;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
+  background: #fff;
+  color: #121212;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif, Yu Gothic;
+  font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -44,12 +44,10 @@ body {
 }
 
 a {
-  color: $link-color;
-  text-decoration: $link-decoration;
+  color: #55f;
 
   &:hover {
-    color: darken($link-color, 15%);
-    text-decoration: $link-hover-decoration;
+    color: darken(#55f, 15%);
   }
 }
 
@@ -63,42 +61,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
-// ---------------------------------
-// Main container
-// ---------------------------------
-// .page {}
-
-
-// ---------------------------------
-// Bootstrap containfers
-// ---------------------------------
-
-// .container / .container-fluid
-// ------------------------------
-.container,
-.container-fluid {
-  // *** Adjust inner elements gutter
-  &--gutter_small-gutter {
-    @include col-space();
-  }
-
-  &--gutter_small-gutter-for-sm {
-    @include media-breakpoint-down(sm) {
-      @include col-space();
-    }
-  }
-}
-
-// .sec
-// ------------------------------
-// .sec {}
-
-// .row
-// ------------------------------
-// .row {}
-
-// .col-xx
-// ------------------------------
-// .col-xx {}
