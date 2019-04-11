@@ -37,8 +37,5 @@
     "stylelint-config-standard": "^18.2.0",
     "webpack": "^4.29.6",
     "webpack-stream": "^5.2.1"
-  },
-  "dependencies": {
-    "jquery": "^3.3.1"
   }
 }
