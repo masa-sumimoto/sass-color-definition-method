@@ -1,7 +1,7 @@
 {
-  "name": "sass-color-generate-regulation",
+  "name": "sass-color-definition-method",
   "version": "1.0.0",
-  "description": "This is my color generate regulation with SASS",
+  "description": "This is my color definition method using SASS.",
   "main": "app.js",
   "scripts": {
     "serve": "gulp",
