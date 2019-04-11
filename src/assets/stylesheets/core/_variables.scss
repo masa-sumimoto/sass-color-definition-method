@@ -5,12 +5,6 @@
 // ---------------------------------
 // Color System: Define Function
 // ---------------------------------
-$colors: ();
-
-@function colors($key) {
-  @return map-get($colors, $key);
-}
-
 @function get-scale-color($color-info, $scaleLength, $percent) {
   $r: map-get($color-info, r);
   $g: map-get($color-info, g);
@@ -23,10 +17,14 @@ $colors: ();
   @return rgb($result-r, $result-g, $result-b);
 }
 
+@function colors($key) {
+  @return map-get($colors, $key);
+}
 
 // ---------------------------------
 // Color System: Define Colors
 // ---------------------------------
+$colors: ();
 $white: #fff;
 $black: #000;
 $color-white: (hex: #fff, r: 255, g: 255, b: 255);
