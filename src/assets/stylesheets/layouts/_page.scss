@@ -5,7 +5,9 @@
 // ---------------------------------
 // Reset
 // ---------------------------------
-*:focus { outline: none; }
+*:focus {
+  outline: none;
+}
 
 html,
 body,
@@ -62,11 +64,12 @@ table {
   border-spacing: 0;
 }
 
-
 // ---------------------------------
 // Page Elements
 // ---------------------------------
-.wrapper { padding: 40px; }
+.wrapper {
+  padding: 40px;
+}
 
 .chips {
   &__item {
@@ -76,5 +79,12 @@ table {
     margin: 0 10px 10px 0;
     width: $_size;
     height: $_size;
+  }
+}
+
+.texts {
+  &__item {
+    display: inline-block;
+    margin: 0 10px 10px 0;
   }
 }
