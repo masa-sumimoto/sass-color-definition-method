@@ -1,0 +1,22 @@
+// ========================================
+// footer
+// ========================================
+
+// ---------------------------------
+// Main container
+// ---------------------------------
+.Footer {
+  background-color: colors("black-800");
+  color: colors("white");
+  height: 50px;
+}
+
+
+// ---------------------------------
+// Inner parts
+// ---------------------------------
+.site-footer-logo {
+  padding-top: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
