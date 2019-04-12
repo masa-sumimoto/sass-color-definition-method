@@ -10,8 +10,8 @@ I will show how to create the situation and haw to use these colors.
 OK. You can use your definition colors with 2 ways.
 
 ### Way 1
-SASS has `map` data type. You can register all of your collection colors to `map`.
-In the following example, `map` named `$colors` and `$each` method are used in like utilitic style.
+SASS has `map` data type. You can register all of your collection colors to map.
+In the following example, map named `$colors` and $each method are used in like utilitic style.  
 ※ $colors has your collection colors.
 
 ```
@@ -29,7 +29,8 @@ In the following example, `map` named `$colors` and `$each` method are used in l
 ```
 
 ### Way 2
-Another Way. Let's use the `colors()` function that calls `$colors` map. It can be used anytime anywhere.
+Another Way. Let's use the `colors()` function that calls `$colors`.  
+It can be used anytime anywhere.
 ```
 .top-foo-parts {
   color: colors("red-900");
@@ -37,6 +38,7 @@ Another Way. Let's use the `colors()` function that calls `$colors` map. It can 
 }
 ```
 
+:star: (^ 0^)/ :star2:  
 
 ## OK! What should I do to use the ways?
 Yes. You need to be prepared to use these methods.  
@@ -62,7 +64,7 @@ This is core function. You can get scale colors with this.
 ```
 
 ### Step2
-Prepare a function that when you want to get color as any properties value.
+Prepare a function that when you want to get color as any properties value.  
 ( You have already see this is used in stylesheet. )
 ```
 @function colors($key) {
@@ -71,15 +73,15 @@ Prepare a function that when you want to get color as any properties value.
 ```
 
 ### Step3
-Prepare a map for all of colors.
-( You register your colors to here.  )
+Prepare a map for all of colors.  
+( You register your colors to here. )
 ```
 $colors: ();
 ```
 
 ### Step4
 Difine a color object!
-It should contain the hex and rgb information.
+It should contain the hex and rgb information.  
 ( This color is a base color! )
 ```
 $color-red: (hex: #f00, r: 255, g: 0, b: 0);
@@ -108,5 +110,6 @@ $colors: map-merge(
 - Use `get-scale-color` function for children brightness colors.
 - Pass `Base color object`, `Scale division length`, `Approximate value with Base color (%)` to `get-scale-color` for children.
 - note: I often use Bootstrap name style like xxx-900, xxx-800... as map key.
+
 
 :innocent: Tanks Reading!! :v:
