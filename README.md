@@ -1,5 +1,5 @@
 # SASS Color Definition Method
-This is my color definition method using SASS. The way uses `Brightness` of HSB.  
+This is my color definition method using SASS. The way uses `Saturation` of HSB.  
 You can get brighter colors than the base color, along with the base color automatically.
 I will show how to create the situation and haw to use these colors.
 
@@ -46,7 +46,7 @@ The following steps show an example of setting red 10 scale colors.
 
 
 ### Step1
-Prepare a function to get the gradual color using brightness.
+Prepare a function to get the gradual color using Saturation.
 This is core function. You can get scale colors with this.
 
 ```
@@ -107,7 +107,7 @@ $colors: map-merge(
 );
 ```
 - Get hex color for base color named `red`.
-- Use `get-scale-color` function for children brightness colors.
+- Use `get-scale-color` function for children Saturation colors.
 - Pass `Base color object`, `Scale division length`, `Approximate value with Base color (%)` to `get-scale-color` for children.
 - note: I often use Bootstrap name style like xxx-900, xxx-800... as map key.
 
